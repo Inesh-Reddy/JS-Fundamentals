@@ -1,0 +1,50 @@
+.Outerdiv{
+    border: 0.5rem solid black;
+    border-radius: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    
+}
+.input {
+    border: 0.5rem solid rgb(157, 162, 213);
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 20rem;
+    background-color: #f0f8ff;
+}
+
+.input input, .input select, .input button {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.input button {
+    background-color: rgb(100, 90, 196);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input button:hover {
+    background-color: rgb(145, 66, 230);
+}
+
+.output {
+    border: 0.5rem solid rgb(81, 224, 86);
+    border-radius: 1.5rem;
+    padding: 1rem;
+    margin: 2rem;
+    width: 200px;
+}
