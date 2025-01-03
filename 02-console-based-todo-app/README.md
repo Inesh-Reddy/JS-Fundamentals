@@ -1,5 +1,7 @@
 # Console-Based Todo List
 
+## Result
+![alt text](image.png)
 ## Project Description
 A JavaScript console-based todo list application that demonstrates understanding of arrays, objects, loops, and basic algorithms. The application allows users to manage tasks through the browser's console interface.
 

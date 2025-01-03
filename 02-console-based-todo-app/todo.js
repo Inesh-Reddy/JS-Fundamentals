@@ -1,10 +1,11 @@
 let tasks = []
-let id = 0;
+
+// Sample data
 const task = {
     id: 1,
     title: "Learn JavaScript",
     completed: false,
-    createdAt: "2025-01-03",
+    createdAt: "Fri_Jan_03_2025_17:10:58",
     completedAt: null
 }
 
@@ -19,35 +20,60 @@ const addTask = (taskName) => {
 }
 
 const deleteTask = (id) => {
-    console.log(`entered delete function with id: ${id}`)
+    console.log();
+    console.log(`-------------------------------------`);
+    console.log(`### Deleting Tasks with id : ${id} ###`);
+    console.log(`-------------------------------------`);
     let taskToDelete = tasks.find(task  => task.id == id);
     console.log(`Deleting... `, taskToDelete);
     tasks = tasks.filter(task => task.id != id);
-    return tasks;
 }
 
 const toggleComplete = (id) => {
-    console.log(`entered toggle function with id: ${id}`)
+    console.log();
+    console.log(`-------------------------------------`);
+    console.log(`### Toggled Tasks with id : ${id} ###`);
+    console.log(`-------------------------------------`);
     tasks.forEach(task => {
         if(task.id == id){
             task.completed = !task.completed;
+            task.completedAt = formatDates();
+            console.log(`1. [ 📝 ] ${task.title} (completed: ${task.completed}) (created: ${task.createdAt})`);
         }
-    })
-    
-    return tasks;
-    
+    });
 }
 
 const listAllTasks = () => {
-    console.log(tasks);
+    console.log(`-------------------------------------`);
+    console.log(`### AllTasks ###`);
+    console.log(`-------------------------------------`);
+    let id =1;
+    return tasks.map(task => {
+        return `${id++}. [ 📝 ] ${task.title} (create: ${task.createdAt})`
+    })
 }
 
 const listCompletedTasks = () => {
-    return tasks.map(task => task.completed == "true");
+    console.log(`-------------------------------------`);
+    console.log(`### Completed Tasks ###`);
+    console.log(`-------------------------------------`);
+    const completedTasks = tasks.filter(task => task.completed === true);
+    let id =1;
+    return completedTasks.map(task => {
+        return`${id++}. [✅] ${task.title} (completed: ${task.completedAt})`;
+    });
 }
 
 const listPendingTasks = () => {
-    return tasks.map(task => task.completed == "false");
+    console.log();
+    console.log(`-------------------------------------`);
+    console.log(`### Pending Tasks ###`);
+    console.log(`-------------------------------------`);
+    const pendingTasks = tasks.filter(task => task.completed === false);
+    let id =1;
+    return pendingTasks.map(task => {
+        return `${id++}. [❌] ${task.title} (create: ${task.createdAt})`
+    })
 }
 
 const generateUniqueID = ()=> {
@@ -59,12 +85,17 @@ const formatDates = () => {
     return date.split(" ",5).join('_');
 }
 
-const validateInputs = () => {
-
-}
 
 
 addTask("Learn JavaScript Arrays");
-listAllTasks();
-console.log(toggleComplete(tasks[0].id));
-console.log(deleteTask(tasks[0].id));
+addTask("Learn Solidity");
+addTask("Learn Python");
+addTask("Build Java e-commerce app");
+addTask("Learn Data Structures and Algorithms");
+addTask("Learn JavaScript Arrays");
+console.log(listAllTasks());
+toggleComplete(tasks[0].id);
+toggleComplete(tasks[1].id);
+deleteTask(tasks[0].id);
+console.log(listCompletedTasks());
+console.log(listPendingTasks())
