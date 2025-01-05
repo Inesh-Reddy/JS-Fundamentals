@@ -1,7 +1,8 @@
 # Async Counter
 
 A simple counter application demonstrating JavaScript's asynchronous capabilities and event handling.
-
+## Result
+![alt text](image.png)
 ## Project Overview
 
 This project implements a counter with async increment and decrement operations, showcasing JavaScript's event loop and callback handling.

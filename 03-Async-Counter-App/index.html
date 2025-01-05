@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Counter App</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div class="main">
+        <h1>Async Counter App</h1>
+        <div class="counter-displays">
+            <div class="current" id="counter">
+                <h2 id="value">Current Counter value:</h2>
+            </div>
+            <div class="inc-dec">
+                <div class="increment">
+                    <button class="btn" onclick="incrementCounterWithDelay(document.getElementById('time').value, document.getElementById('countval').value)">
+                        <img src="./plus-small-svgrepo-com.svg" alt="button-image" />
+                    </button>
+                    
+                    <br />
+                    <input id="time" class="input" type="text" placeholder="please give time in ms"/>
+                    <br />
+                    <input id="countval" class="input" type="text" placeholder="please give no.of counts to up the counter" />
+                </div>
+                <div class="decrement">
+                    <button class="btn" onclick="decrementCounterWithDelay(document.getElementById('dectime').value, document.getElementById('deccountval').value)">
+                        <img src="./minus-svgrepo-com.svg" alt="button-image" />
+                    </button>
+                    
+                    <br />
+                    <input id="dectime" class="input" type="text" placeholder="please give time in ms"/>
+                    <br />
+                    <input id="deccountval" class="input" type="text" placeholder="please give no.of counts to down the counter" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js" ></script>
+</body>
+</html>
