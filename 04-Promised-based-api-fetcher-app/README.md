@@ -1,5 +1,7 @@
 # API Fetcher Project
 
+## Result
+![alt text](image.png)
 ## Recommended APIs for Practice
 1. JSONPlaceholder (https://jsonplaceholder.typicode.com)
 
