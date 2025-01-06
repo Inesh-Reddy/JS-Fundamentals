@@ -1,4 +1,4 @@
-const url = "https://jsonplaceholder.typicode.com/todos/"
+const url1 = "https://jsonplaceholder.typicode.com/todos/"
 
 const getDataFromAPIUsingPromises = async (url, todoId) => {
     return new Promise((resolve, reject) => {
@@ -16,5 +16,5 @@ const getDataFromApi = async (url, todoId) => {
     console.log(data);
 }
 
-getDataFromApi(url,1);
-getDataFromAPIUsingPromises(url,1);
+getDataFromApi(url1,1);
+getDataFromAPIUsingPromises(url1,1);
