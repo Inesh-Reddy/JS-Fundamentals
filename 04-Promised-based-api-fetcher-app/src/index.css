@@ -1,0 +1,37 @@
+.outer-div{
+    border: 1px solid black;
+    border-radius: 1rem;
+    width: auto;
+    height: 100vh;
+
+}
+.result-div{
+    border: 1px solid grey;
+    border-radius: 1rem;
+    width: auto;
+    height: 60vh;
+}
+.selection-div{
+    border: 1px solid grey;
+    border-radius: 1rem;
+    width: auto;
+    height: 40dvh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-div{
+    border: 1px solid grey;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 50%;
+}
+.right-div{
+    border: 1px solid grey;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 50%;
+}
