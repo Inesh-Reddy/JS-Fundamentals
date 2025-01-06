@@ -5,14 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API-Fetcher-App</title>
     <link rel="stylesheet" href="./index.css" />
+    <script >
+        let leftselectedApiId = null;
+        let leftselectedId = null;
+        let rightselectedApiId = null;
+        let rightselectedId = null;
+        document.addEventListener("DOMContentLoaded", () => {
+            const leftSelectElementApi = document.getElementById("left-selection-box-api");
+            leftSelectElementApi.addEventListener("change", (event) => {
+                const selectedOption = event.target.options[event.target.selectedIndex];
+                leftselectedApiId = selectedOption.id;
+                console.log("Selected Option ID:", leftselectedApiId);
+            });
+            const leftSelectElementId = document.getElementById("left-selection-box-id");
+            leftSelectElementId.addEventListener("change", (event) => {
+                const selectedOption = event.target.options[event.target.selectedIndex];
+                leftselectedId = selectedOption.id;
+                console.log("Selected Option ID:", leftselectedId);
+            });
+            const rightSelectElementApi = document.getElementById("right-selection-box-api");
+            rightSelectElementApi.addEventListener("change", (event) => {
+                const selectedOption = event.target.options[event.target.selectedIndex];
+                rightselectedApiId = selectedOption.id;
+                console.log("Selected Option ID:", rightselectedApiId);
+            });
+            const rightSelectElementId = document.getElementById("right-selection-box-id");
+            rightSelectElementId.addEventListener("change", (event) => {
+                const selectedOption = event.target.options[event.target.selectedIndex];
+                rightselectedId = selectedOption.id;
+                console.log("Selected Option ID:", rightselectedId);
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="outer-div">
         <div class="result-div">
-            <div style="align-items: center;">
-                <h2 id="result">
-
-                </h2>
+            <div id="result" class="result">
+                <h2 id="result-title"></h2>
+                <br />
+                <h3 id="result-completed" ></h3>
             </div>
         </div>
         <div class="selection-div">
@@ -20,48 +52,53 @@
                 <h3>Fetching using Async/Await</h3>
                 <p>Please select API & ID to fetch ToDo</p>
                 <select class="select" id="left-selection-box-api">
-                    <option>JSON-place-Holder-API</option>
-                    <option>will be adding more links sooner...</option>
+                    <option>select-api</option>
+                    <option id="https://jsonplaceholder.typicode.com/todos/">JSON-place-Holder-API</option>
+                    <option id="none">will be adding more links sooner...</option>
                 </select>
                 <select class="select" id="left-selection-box-id">
-                    <option id="left-selection-box-id-1">1</option>
-                    <option id="left-selection-box-id-2">2</option>
-                    <option id="left-selection-box-id-3">3</option>
-                    <option id="left-selection-box-id-4">4</option>
-                    <option id="left-selection-box-id-5">5</option>
-                    <option id="left-selection-box-id-6">6</option>
-                    <option id="left-selection-box-id-7">7</option>
-                    <option id="left-selection-box-id-8">8</option>
-                    <option id="left-selection-box-id-9">9</option>
-                    <option id="left-selection-box-id-10">10</option>
+                    <option>select-id</option>
+                    <option id="1">1</option>
+                    <option id="2">2</option>
+                    <option id="3">3</option>
+                    <option id="4">4</option>
+                    <option id="5">5</option>
+                    <option id="6">6</option>
+                    <option id="7">7</option>
+                    <option id="8">8</option>
+                    <option id="9">9</option>
+                    <option id="10">10</option>
                 </select>
                 <br/>
-                <button class="btn" id="left-div-btn">Fetch</button>
+                <button class="btn" onclick="getDataFromApi(leftselectedApiId,leftselectedId)" id="left-div-btn">Fetch</button>
             </div>
             <div class="right-div">
                 <h3>Fetching using Promises</h3>
                 <p>Please select API & ID to fetch ToDo</p>
-                <select class="select" id="right-selection-box">
-                    <option>JSON-place-Holder-API</option>
-                    <option>will be adding more links...</option>
+                <select class="select" id="right-selection-box-api">
+                    <option>select-api</option>
+                    <option id="https://jsonplaceholder.typicode.com/todos/">JSON-place-Holder-API</option>
+                    <option id="right-none">will be adding more links...</option>
                 </select>
                 <select class="select" id="right-selection-box-id">
-                    <option id="right-selection-box-id-1">1</option>
-                    <option id="right-selection-box-id-2">2</option>
-                    <option id="right-selection-box-id-3">3</option>
-                    <option id="right-selection-box-id-4">4</option>
-                    <option id="right-selection-box-id-5">5</option>
-                    <option id="right-selection-box-id-6">6</option>
-                    <option id="right-selection-box-id-7">7</option>
-                    <option id="right-selection-box-id-8">8</option>
-                    <option id="right-selection-box-id-9">9</option>
-                    <option id="right-selection-box-id-10">10</option>
+                    <option>select-id</option>
+                    <option id="1">1</option>
+                    <option id="2">2</option>
+                    <option id="3">3</option>
+                    <option id="4">4</option>
+                    <option id="5">5</option>
+                    <option id="6">6</option>
+                    <option id="7">7</option>
+                    <option id="8">8</option>
+                    <option id="9">9</option>
+                    <option id="10">10</option>
                 </select>
                 <br/>
-                <button class="btn" id="right-div-btn">Fetch</button>
+                <button class="btn" onclick="getDataFromAPIUsingPromises(rightselectedApiId,rightselectedId)" id="right-div-btn">Fetch</button>
             </div>
         </div>
     </div>
-    <script src="./index.js" ></script>
+    
+    <script  src="./index.js"></script>
 </body>
 </html>
