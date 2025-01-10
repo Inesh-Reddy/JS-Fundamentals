@@ -1,0 +1,642 @@
+[
+  {
+    "id": 4484,
+    "question": "What does the 'fs.unlink()' method do?",
+    "description": "Understanding file deletion.",
+    "answers": {
+      "answer_a": "Deletes a file from the filesystem",
+      "answer_b": "Unlinks a symbolic link",
+      "answer_c": "Removes a directory",
+      "answer_d": "Deletes a file asynchronously",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "'fs.unlink()' deletes a file asynchronously from the filesystem.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "nodeJS"
+      }
+    ],
+    "category": "NodeJs",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 3712,
+    "question": "What does 'npm ci' do differently compared to 'npm install'?",
+    "description": "Understanding the difference between 'npm ci' and 'npm install'.",
+    "answers": {
+      "answer_a": "It skips installing devDependencies",
+      "answer_b": "It installs dependencies strictly based on package-lock.json",
+      "answer_c": "It updates the dependencies to the latest version",
+      "answer_d": "It clears the npm cache before installation",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "'npm ci' installs dependencies strictly based on package-lock.json for reproducible builds.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "nodeJS"
+      }
+    ],
+    "category": "NodeJs",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 4978,
+    "question": "What does 'buffer.indexOf(value)' return?",
+    "description": "Using 'indexOf' with Buffers.",
+    "answers": {
+      "answer_a": "The index of the first occurrence of 'value' in the Buffer",
+      "answer_b": "The total number of occurrences of 'value' in the Buffer",
+      "answer_c": "A new Buffer containing all matching values",
+      "answer_d": "The last index where 'value' occurs in the Buffer",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "'buffer.indexOf(value)' returns the index of the first occurrence of the value in the Buffer, or -1 if not found.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "nodeJS"
+      }
+    ],
+    "category": "NodeJs",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 4623,
+    "question": "How do you handle multiple rejections in 'Promise.allSettled()'?",
+    "description": "Handling multiple outcomes with 'Promise.allSettled()'.",
+    "answers": {
+      "answer_a": "It automatically resolves and ignores rejections",
+      "answer_b": "It returns an array of objects with the status and reason for each rejected Promise",
+      "answer_c": "It throws an AggregateError",
+      "answer_d": "It stops execution after the first rejection",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "'Promise.allSettled()' returns an array of objects containing the status ('fulfilled' or 'rejected') and value or reason for each Promise.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "nodeJS"
+      }
+    ],
+    "category": "NodeJs",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 4569,
+    "question": "What does the 'await' keyword do in an async function?",
+    "description": "Exploring the behavior of 'await'.",
+    "answers": {
+      "answer_a": "Delays execution of the function until all Promises are resolved",
+      "answer_b": "Pauses the execution of the async function until the Promise is resolved",
+      "answer_c": "Executes a Promise sequentially",
+      "answer_d": "Converts the function into a synchronous one",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "'await' pauses the execution of an async function until the Promise is resolved, making it easier to handle async operations.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "nodeJS"
+      }
+    ],
+    "category": "NodeJs",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 3752,
+    "question": "What does 'crypto.randomBytes()' do in Node.js?",
+    "description": "Understanding the role of 'crypto.randomBytes()'.",
+    "answers": {
+      "answer_a": "Generates random integers",
+      "answer_b": "Generates cryptographically strong pseudo-random data",
+      "answer_c": "Encrypts data using random keys",
+      "answer_d": "Creates random string tokens",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "'crypto.randomBytes()' generates cryptographically strong pseudo-random data.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "nodeJS"
+      }
+    ],
+    "category": "NodeJs",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 4767,
+    "question": "How do you read a file line-by-line in Node.js?",
+    "description": "Efficiently processing files line-by-line.",
+    "answers": {
+      "answer_a": "Use the 'readline' module with a readable stream",
+      "answer_b": "Use fs.readFile() and split by newline characters",
+      "answer_c": "Use fs.watch() to monitor lines",
+      "answer_d": "Use fs.appendFile() with a line delimiter",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "The 'readline' module, combined with a readable stream, is used to read files line-by-line efficiently.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "nodeJS"
+      }
+    ],
+    "category": "NodeJs",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 4970,
+    "question": "What is the result of using 'Buffer.byteLength(string)'?",
+    "description": "Determining the byte length of a string.",
+    "answers": {
+      "answer_a": "The byte length of the string in a given encoding",
+      "answer_b": "The number of characters in the string",
+      "answer_c": "The size of a Buffer created from the string",
+      "answer_d": "The memory usage of the string",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "'Buffer.byteLength(string)' returns the byte length of a string in a specified encoding.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "nodeJS"
+      }
+    ],
+    "category": "NodeJs",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 4954,
+    "question": "How do you check the length of a Buffer in bytes?",
+    "description": "Getting the byte length of a Buffer.",
+    "answers": {
+      "answer_a": "buffer.length",
+      "answer_b": "buffer.size",
+      "answer_c": "Buffer.byteLength(buffer)",
+      "answer_d": "buffer.getLength()",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "The 'length' property of a Buffer provides its size in bytes.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "nodeJS"
+      }
+    ],
+    "category": "NodeJs",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 4936,
+    "question": "How do you detach a child process from the parent process?",
+    "description": "Detaching child processes.",
+    "answers": {
+      "answer_a": "Set the 'detached' option to true in the child process creation method",
+      "answer_b": "Call 'child.detach()' on the process object",
+      "answer_c": "Set the 'parent' option to false in 'spawn()'",
+      "answer_d": "Call 'child.disconnect()' after creation",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "To detach a child process, set the 'detached' option to true in the method used to create the process.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "nodeJS"
+      }
+    ],
+    "category": "NodeJs",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 4772,
+    "question": "How do you monitor multiple files in a directory for changes?",
+    "description": "Watching multiple files.",
+    "answers": {
+      "answer_a": "Use fs.watch() on each file or on the directory itself",
+      "answer_b": "Use fs.readdir() periodically",
+      "answer_c": "Use fs.unlink() to detect removed files",
+      "answer_d": "Use fs.stat() to monitor timestamps",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "'fs.watch()' can be used to monitor multiple files in a directory by either watching each file or the directory itself.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "nodeJS"
+      }
+    ],
+    "category": "NodeJs",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 4572,
+    "question": "How does 'Promise.allSettled()' differ from 'Promise.all()'?",
+    "description": "Understanding Promise methods.",
+    "answers": {
+      "answer_a": "'Promise.allSettled()' resolves regardless of Promise outcomes",
+      "answer_b": "'Promise.allSettled()' rejects if any Promise rejects",
+      "answer_c": "'Promise.allSettled()' runs Promises sequentially",
+      "answer_d": "'Promise.allSettled()' only resolves successful Promises",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "'Promise.allSettled()' resolves after all Promises have settled, regardless of whether they were fulfilled or rejected.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "nodeJS"
+      }
+    ],
+    "category": "NodeJs",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 5139,
+    "question": "Which Node.js module provides an API for monitoring performance metrics like CPU usage and heap memory?",
+    "description": "Using a module for performance metrics.",
+    "answers": {
+      "answer_a": "The `os` module",
+      "answer_b": "The `perf_hooks` module",
+      "answer_c": "The `util` module",
+      "answer_d": "The `diagnostics` module",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "The `perf_hooks` module provides APIs for monitoring performance metrics such as CPU usage and heap memory.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "nodeJS"
+      }
+    ],
+    "category": "NodeJs",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 5309,
+    "question": "How can you use ES Modules in a Node.js project without using `.mjs` file extensions?",
+    "description": "Using ES Modules in Node.js.",
+    "answers": {
+      "answer_a": "Set `type: 'module'` in the `package.json` file",
+      "answer_b": "Use the `--es-modules` flag when starting Node.js",
+      "answer_c": "Convert the project to TypeScript",
+      "answer_d": "Use the `import` keyword without specifying the file extension",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "You can use ES Modules without `.mjs` extensions by setting `type: 'module'` in the `package.json` file.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "nodeJS"
+      }
+    ],
+    "category": "NodeJs",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 4482,
+    "question": "How can you create a custom REPL in Node.js?",
+    "description": "Exploring REPL customization.",
+    "answers": {
+      "answer_a": "Using the 'repl.start()' method",
+      "answer_b": "Using the 'console.createREPL()' method",
+      "answer_c": "Extending the 'vm' module",
+      "answer_d": "Using the 'util.repl()' method",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "A custom REPL can be created using the 'repl.start()' method, allowing full customization.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "nodeJS"
+      }
+    ],
+    "category": "NodeJs",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 4944,
+    "question": "What is the effect of passing an empty array as arguments to 'spawn()'?",
+    "description": "Using empty arguments in 'spawn'.",
+    "answers": {
+      "answer_a": "The command is executed without any arguments",
+      "answer_b": "The child process fails to start",
+      "answer_c": "The parent process is terminated",
+      "answer_d": "Default arguments are automatically applied",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "Passing an empty array executes the command without any additional arguments.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "nodeJS"
+      }
+    ],
+    "category": "NodeJs",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 3736,
+    "question": "How does Node.js manage multiple client requests on a single thread?",
+    "description": "Understanding Node.js concurrency.",
+    "answers": {
+      "answer_a": "By creating a new thread for each request",
+      "answer_b": "By using an event loop and asynchronous I/O",
+      "answer_c": "By queueing requests sequentially",
+      "answer_d": "By prioritizing requests with high latency",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "Node.js uses an event loop and asynchronous I/O to handle multiple client requests on a single thread.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "nodeJS"
+      }
+    ],
+    "category": "NodeJs",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 4570,
+    "question": "What event is emitted by the process object when an unhandled Promise rejection occurs?",
+    "description": "Handling unhandled Promise rejections.",
+    "answers": {
+      "answer_a": "'uncaughtException'",
+      "answer_b": "'rejectionHandled'",
+      "answer_c": "'unhandledRejection'",
+      "answer_d": "'error'",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "The 'unhandledRejection' event is emitted when a Promise rejection is not caught.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "nodeJS"
+      }
+    ],
+    "category": "NodeJs",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 4934,
+    "question": "How do you pass arguments to a child process created with 'spawn()'?",
+    "description": "Passing arguments to spawned processes.",
+    "answers": {
+      "answer_a": "Provide them as an array in the second argument to 'spawn()'",
+      "answer_b": "Append them to the command string",
+      "answer_c": "Use the 'args' option in the 'spawn()' method",
+      "answer_d": "Pass them as a JSON object",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "Arguments can be passed to 'spawn()' by providing them as an array in the second argument.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "nodeJS"
+      }
+    ],
+    "category": "NodeJs",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 3708,
+    "question": "Which method removes an event listener in Node.js?",
+    "description": "Understanding event listener removal.",
+    "answers": {
+      "answer_a": "eventEmitter.clear()",
+      "answer_b": "eventEmitter.removeListener()",
+      "answer_c": "eventEmitter.off()",
+      "answer_d": "eventEmitter.delete()",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": "'eventEmitter.removeListener()' is used to remove an event listener.",
+    "tip": null,
+    "tags": [
+      {
+        "name": "nodeJS"
+      }
+    ],
+    "category": "NodeJs",
+    "difficulty": "Medium"
+  }
+]
