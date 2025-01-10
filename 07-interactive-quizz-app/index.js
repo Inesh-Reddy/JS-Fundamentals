@@ -8,12 +8,12 @@ const check = (currentQuestion) => {
   for (let i = 0; i < questionsAttempted.length; i++) {
     if (questionsAttempted[i] === currentQuestion) {
       console.log(`found same question`);
-      // break;
       return true;
     }
   }
   return false;
 };
+
 const getQuestion = async (url) => {
   let que = await examStart(url);
   question = que;

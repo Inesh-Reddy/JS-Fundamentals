@@ -14,13 +14,11 @@ const writeToFile = async (data) => {
     "fetchedquiz.json",
     Buffer.from(JSON.stringify(data, null, 2))
   );
-  // console.log("Data written to file successfully.");
 };
 
 export default async function examStart(url) {
   const data = await getData(url);
   await writeToFile(data);
   fileData = JSON.parse(await fs.readFile("fetchedquiz.json", "utf-8"));
-  // console.log(questionFomrat(fileData));
   return questionFomrat(fileData);
 }
